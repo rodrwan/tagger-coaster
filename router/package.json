@@ -1,0 +1,27 @@
+{
+  "name": "router",
+  "version": "0.0.1",
+  "description": "Example app to test react-router",
+  "main": "build/bundle.js",
+  "scripts": {
+    "test": "mocha spec",
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 8080",
+    "build": "webpack-dev-server --progress --colors --content-base build",
+    "dev": "webpack-dev-server --progress --colors --port 8090"
+  },
+  "author": "Rodrigo Fuenzalida",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "http-server": "^0.8.0",
+    "jsx-loader": "^0.13.2",
+    "mocha": "^2.2.5",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-router": "^0.13.3"
+  }
+}

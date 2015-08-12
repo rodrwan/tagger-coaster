@@ -1,0 +1,31 @@
+{
+  "name": "tagger-coaster",
+  "version": "0.0.1",
+  "description": "Web service to tag post according to word frecuency.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec"
+  },
+  "keywords": [
+    "tags",
+    "words",
+    "parse",
+    "scraping"
+  ],
+  "author": "Rodrigo Fuenzalida",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "colors": "^1.1.2",
+    "dotenv": "^1.2.0",
+    "hapi": "^8.8.1",
+    "lodash": "^3.10.1",
+    "natural": "^0.2.1",
+    "stopwords": "0.0.4",
+    "yakuza": "^1.0.7"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
+}
