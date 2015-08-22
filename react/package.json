@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "highlight.js": "^8.7.0",
-    "material-ui": "^0.10.2",
+    "material-ui": "^0.10.4",
     "raw-loader": "^0.5.1",
     "react": "^0.13.3",
     "react-highcharts": "^1.0.3",

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="HackerNewCharts">
+<head>
+  <meta charset="utf-8" />
+  <title>Hacker News Charts!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
+  <!-- bower:css -->
+  <!-- endbower -->
+
+  <!-- bower:js -->
+  <!-- endbower -->
+  <script src="app/HackerNewCharts.js"></script>
+</head>
+
+<body autoscroll="true" ng-controller="AppCtrl">
+  <div flash-message="5000"></div>
+  <div id="wrapper">
+    <div id="main" ui-view></div>
+  </div>
+</body>
+</html>

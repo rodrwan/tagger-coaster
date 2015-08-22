@@ -1,0 +1,23 @@
+{
+  "name": "ember",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rodrwan/tagger-coaster",
+  "authors": [
+    "Rodrigo Fuenzalida <rfuenzalidac87@gmail.com>"
+  ],
+  "description": "hn ember",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~2.0.0",
+    "ember-data": "~1.13.9",
+    "handlebars": "~3.0.3"
+  }
+}

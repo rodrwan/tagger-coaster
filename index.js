@@ -73,16 +73,17 @@ server.connection({
 
 server.route({
   'method': 'GET',
-  'path': '/api/get-topics',
+  'path': '/api/topics',
   'handler': function (request, reply) {
     reply({
           'data': _topics
     }).header('Content-Type', 'application/json');
   }
 });
+
 server.route({
   'method': 'GET',
-  'path': '/api/get-topics/{id}',
+  'path': '/api/topic/{id}',
   'handler': function (request, reply) {
     if (request.params.id) {
       reply({
@@ -92,6 +93,7 @@ server.route({
   }
 });
 
-console.log('Listening on port: ' + process.env.PORT);
 // Start the server
-server.start();
+server.start(function () {
+  console.log('Listening on port: ' + process.env.PORT);
+});

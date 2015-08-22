@@ -3,13 +3,20 @@ var Router = require('react-router');
 var Highlight = require('react-highlight');
 var Highcharts = require('react-highcharts');
 var Jquery = require('jquery');
+var mui = require('material-ui');
+var injectTapEventPlugin = require("react-tap-event-plugin");
 
 var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
+var ThemeManager = new mui.Styles.ThemeManager();
+var List = mui.List;
+var ListItem = mui.ListItem;
+var ListDivider = mui.ListDivider;
 
 window.React = React;
+injectTapEventPlugin();
 
 var App = React.createClass({
   render: function () {
@@ -25,16 +32,26 @@ var App = React.createClass({
 function getTopicListItem (topic, id) {
   var linkId = "/topic/" + (parseInt(id, 10) + 1) ;
   return (
-    <li key={id}>
+    <List key={id}>
       <Link to={linkId}>{topic.url}</Link>
-    </li>
+    </List>
   );
 }
 
 var Topics = React.createClass({
+  contextTypes: {
+    name: React.PropTypes.string
+  },
+
   getInitialState: function () {
     return {
       topics: []
+    };
+  },
+
+  getChildContext: function () {
+    return {
+      muiTheme: ThemeManager.getCurrentTheme()
     };
   },
 
@@ -60,9 +77,9 @@ var Topics = React.createClass({
       <div>
         <h1>HackerNews</h1>
         <h2>List of Topics</h2>
-        <ul>
+        <ListItem>
             { links }
-        </ul>
+        </ListItem>
       </div>
     );
   }
@@ -71,6 +88,12 @@ var Topics = React.createClass({
 var Topic = React.createClass({
   contextTypes: {
     router: React.PropTypes.func
+  },
+
+  getChildContext: function () {
+    return {
+      muiTheme: ThemeManager.getCurrentTheme()
+    };
   },
 
   createConfig: function () {

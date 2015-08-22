@@ -1,0 +1,18 @@
+{
+  "name": "ember",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Rodrigo Fuenzalida <rfuenzalidac87@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-wiredep": "^2.0.0"
+  }
+}

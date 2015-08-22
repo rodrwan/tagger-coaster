@@ -1,0 +1,32 @@
+{
+  "name": "angular",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rodrwan/tagger-coaster",
+  "authors": [
+    "Rodrigo Fuenzalida <rfuenzalidac87@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-animate": "~1.4.3",
+    "angular-cache": "~4.2.2",
+    "angular-flash-alert": "~1.1.0",
+    "angular-sanitize": "~1.4.0",
+    "angular-ui-router": "~0.2.15",
+    "a0-angular-storage": "~0.0.11",
+    "restangular": "~1.5.1",
+    "angular-material": "~0.10.1",
+    "angular-mocks": "~1.4.4",
+    "highcharts-ng": "~0.0.8",
+    "jquery": "~2.1.4",
+    "highcharts": "~4.1.8"
+  }
+}

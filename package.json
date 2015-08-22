@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Web service to tag post according to word frecuency.",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "test": "mocha spec"
   },
@@ -12,6 +13,10 @@
     "parse",
     "scraping"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rodrwan/tagger-coaster.git"
+  },
   "author": "Rodrigo Fuenzalida",
   "license": "MIT",
   "dependencies": {
@@ -21,6 +26,7 @@
     "hapi": "^8.8.1",
     "lodash": "^3.10.1",
     "natural": "^0.2.1",
+    "rethinkdb": "^2.1.0",
     "stopwords": "0.0.4",
     "yakuza": "^1.0.7"
   },
